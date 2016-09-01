@@ -148,7 +148,7 @@
     <source-file src="src/android/getuiwrapper.java" target-dir="src/com/pluswave/getui/wrapper" />
     <source-file src="src/android/PushReceiver.java" target-dir="src/com/pluswave/getui/wrapper" />
     <source-file src="src/android/libs/GetuiExt-2.0.3.jar" target-dir="libs" />
-    <source-file src="src/android/libs/GetuiSDK2.7.0.0.jar" target-dir="libs" />
+    <source-file src="src/android/libs/GetuiSDK2.8.1.0.jar" target-dir="libs" />
     <source-file src="src/android/libs/json_simple-1.1.jar" target-dir="libs" />
     <source-file src="src/android/armeabi/libgetuiext.so" target-dir="libs/armeabi" />
     <source-file src="src/android/armeabi-v7a/libgetuiext.so" target-dir="libs/armeabi-v7a" />
@@ -189,7 +189,7 @@
     <header-file src="src/ios/AppDelegate+notification.h" />
     <header-file src="src/ios/PushPlugin.h" />
 
-    <source-file src="src/ios/GtSdkLib/libGeTuiSdk-1.3.0.a" framework="true"/>
+    <source-file src="src/ios/GtSdkLib/libGeTuiSdk-1.4.3.a" framework="true"/>
     <header-file src="src/ios/GtSdkLib/GeTuiSdk.h" />
     <source-file src="src/ios/gtsdk.plist"  />
     
