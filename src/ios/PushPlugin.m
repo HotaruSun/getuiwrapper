@@ -13,6 +13,13 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+- (void)getDevicetoken:(CDVInvokedUrlCommand*)command;
+{
+    NSLog(@">>>[getDevicetoken myDevicetoken]:%@", myDevicetoken);
+    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:self.myDevicetoken];
+    [pluginResult setKeepCallbackAsBool:NO];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
 
 
 #pragma mark - GeTuiSdkDelegate

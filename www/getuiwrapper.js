@@ -35,5 +35,5 @@ exports.getClientID = function( success, error){
 };
 
 exports.getDevicetoken = function(success){
-    exec(success, null, "AppDelegate", "setMyDeviceTokenCallback", [] );
+    exec(success, null, "getuiwrapper", "getDevicetoken", [] );
 };

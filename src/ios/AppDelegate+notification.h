@@ -14,7 +14,7 @@
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:( void (^)(UIBackgroundFetchResult))completionHandler;
 - (void)applicationDidBecomeActive:(UIApplication *)application;
 - (id) getCommandInstance:(NSString*)className;
-- (void)setMyDeviceTokenCallback:(CDVInvokedUrlCommand *)command;
-- (void)GetMyDeviceToken:();
+// - (void)setMyDeviceTokenCallback:(CDVInvokedUrlCommand *)command;
+// - (void)GetMyDeviceToken:();
 
 @end
