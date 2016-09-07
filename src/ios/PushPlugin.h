@@ -9,7 +9,7 @@
 {
   NSString * clientID;
   // NSString *myDevicetoken;
-  extern const NSString * myDevicetoken;
+  NSString * myDevicetoken;
 }
 
 @property (nonatomic, copy) NSString *clientID;
