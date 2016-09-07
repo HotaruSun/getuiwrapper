@@ -15,7 +15,7 @@
 NSString *const NotificationCategoryIdent = @"ACTIONABLE";
 NSString *const NotificationActionOneIdent = @"ACTION_ONE";
 NSString *const NotificationActionTwoIdent = @"ACTION_TWO";
-NSString *myDevicetoken = @"";
+NSString *const myDevicetoken;
 
 
 typedef enum{
