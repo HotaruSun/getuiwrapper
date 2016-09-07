@@ -15,8 +15,7 @@
 NSString *const NotificationCategoryIdent = @"ACTIONABLE";
 NSString *const NotificationActionOneIdent = @"ACTION_ONE";
 NSString *const NotificationActionTwoIdent = @"ACTION_TWO";
-NSString *myDevicetoken;
-// NSString *_setMyDeviceTokenCallbackId;
+NSString *const myDevicetoken = nil;
 
 
 typedef enum{
@@ -86,15 +85,6 @@ static char launchNotificationKey;
      // [3]:向个推服务器注册deviceToken
     [GeTuiSdk registerDeviceToken:token]; 
 }
-
-/*- (void)setMyDeviceTokenCallback:(CDVInvokedUrlCommand *)command {
-    _setMyDeviceTokenCallbackId = command.callbackId;
-}
-
-- (void)GetMyDeviceToken:() {
-    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:myDevicetoken];
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:_setMyDeviceTokenCallbackId];
-}*/
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
   // PushPlugin *pushHandler = [self getCommandInstance:@"PushNotification"];
