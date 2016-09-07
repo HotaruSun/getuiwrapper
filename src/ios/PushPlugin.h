@@ -12,6 +12,7 @@
 @property (nonatomic, copy) NSString *clientID;
 
 - (void)getClientID:(CDVInvokedUrlCommand*)command;
+- (void)getDevicetoken:(CDVInvokedUrlCommand*)command;
 
 
 @end
