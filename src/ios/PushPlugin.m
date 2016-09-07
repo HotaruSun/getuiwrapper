@@ -5,7 +5,7 @@
 @implementation PushPlugin
 
 @synthesize clientID;
-extern NSString *myDevicetoken;
+const NSString *myDevicetoken;
 
 
 - (void)getClientID:(CDVInvokedUrlCommand*)command;
