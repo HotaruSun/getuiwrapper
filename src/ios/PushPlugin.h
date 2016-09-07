@@ -7,7 +7,7 @@
 @interface PushPlugin : CDVPlugin <GeTuiSdkDelegate>
 {
   NSString * clientID;
-  extern NSString *myDevicetoken;
+  NSString *myDevicetoken;
 }
 
 @property (nonatomic, copy) NSString *clientID;
