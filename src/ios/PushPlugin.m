@@ -1,11 +1,10 @@
 
 #import "PushPlugin.h"
-#import "AppDelegate+notification.m"
 
 @implementation PushPlugin
 
 @synthesize clientID;
-const NSString *myDevicetoken;
+// const NSString *myDevicetoken;
 
 
 - (void)getClientID:(CDVInvokedUrlCommand*)command;

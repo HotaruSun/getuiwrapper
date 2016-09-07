@@ -3,6 +3,7 @@
 #import <Cordova/CDV.h>
 #import <Cordova/CDVPlugin.h>
 #import "GeTuiSdk.h"
+#import "AppDelegate+notification.h"
 
 @interface PushPlugin : CDVPlugin <GeTuiSdkDelegate>
 {
