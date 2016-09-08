@@ -5,7 +5,7 @@
 @implementation PushPlugin
 
 @synthesize clientID;
-// extern NSString *myDevicetoken;
+extern NSString *myDevicetoken;
 
 
 - (void)getClientID:(CDVInvokedUrlCommand*)command;
@@ -15,13 +15,13 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-// - (void)getDevicetoken:(CDVInvokedUrlCommand*)command;
-// {
-//     NSLog(@">>>[getDevicetoken myDevicetoken]:%@", myDevicetoken);
-//     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:myDevicetoken];
-//     [pluginResult setKeepCallbackAsBool:NO];
-//     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-// }
+- (void)getDevicetoken:(CDVInvokedUrlCommand*)command;
+{
+    NSLog(@">>>[getDevicetoken myDevicetoken]:%@", myDevicetoken);
+    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:myDevicetoken];
+    [pluginResult setKeepCallbackAsBool:NO];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
 
 
 #pragma mark - GeTuiSdkDelegate

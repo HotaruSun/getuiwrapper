@@ -6,13 +6,16 @@
 //
 //
 
-#import <Foundation/Foundation.h>
-#import <Cordova/CDV.h>
-#import <Cordova/CDVPlugin.h>
+// #import <Foundation/Foundation.h>
+// #import <Cordova/CDV.h>
+// #import <Cordova/CDVPlugin.h>
 // #import "GeTuiSdk.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate (notification)
+{
+	NSString * myDevicetoken;
+}
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error;
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:( void (^)(UIBackgroundFetchResult))completionHandler;
