@@ -1,5 +1,6 @@
 
 #import "PushPlugin.h"
+#import "AppDelegate+notification.m"
 
 @implementation PushPlugin
 
