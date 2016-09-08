@@ -6,6 +6,10 @@
 //
 //
 
+#import <Foundation/Foundation.h>
+#import <Cordova/CDV.h>
+#import <Cordova/CDVPlugin.h>
+#import "GeTuiSdk.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate (notification)

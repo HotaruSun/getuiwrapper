@@ -87,6 +87,14 @@ static char launchNotificationKey;
     [GeTuiSdk registerDeviceToken:token]; 
 }
 
+- (void)getDevicetoken:(CDVInvokedUrlCommand*)command;
+{
+    NSLog(@">>>[getDevicetoken myDevicetoken]:%@", myDevicetoken);
+    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:myDevicetoken];
+    [pluginResult setKeepCallbackAsBool:NO];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
   // PushPlugin *pushHandler = [self getCommandInstance:@"PushNotification"];
   // [pushHandler didFailToRegisterForRemoteNotificationsWithError:error];

@@ -3,12 +3,12 @@
 #import <Cordova/CDV.h>
 #import <Cordova/CDVPlugin.h>
 #import "GeTuiSdk.h"
-#import "AppDelegate+notification.h"
+// #import "AppDelegate+notification.h"
 
 @interface PushPlugin : CDVPlugin <GeTuiSdkDelegate>
 {
   NSString * clientID;
-  NSString * myDevicetoken;
+  // NSString * myDevicetoken;
 }
 
 @property (nonatomic, copy) NSString *clientID;
