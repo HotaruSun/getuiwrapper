@@ -17,7 +17,7 @@ extern NSString *myDevicetoken;
 - (void)getDevicetoken:(CDVInvokedUrlCommand*)command;
 {
     NSLog(@">>>[getDevicetoken myDevicetoken]:%@", myDevicetoken);
-    CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:self.myDevicetoken];
+    CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsBool:myDevicetoken];
     [pluginResult setKeepCallbackAsBool:NO];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
