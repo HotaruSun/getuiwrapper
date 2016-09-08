@@ -15,7 +15,7 @@
 NSString *const NotificationCategoryIdent = @"ACTIONABLE";
 NSString *const NotificationActionOneIdent = @"ACTION_ONE";
 NSString *const NotificationActionTwoIdent = @"ACTION_TWO";
-NSString *const myDevicetoken;
+NSString *myDevicetoken;
 
 
 typedef enum{
@@ -82,6 +82,7 @@ static char launchNotificationKey;
      NSString *token = [[deviceToken description] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"<>"]];
      token = [token stringByReplacingOccurrencesOfString:@" " withString:@""];
      myDevicetoken = token;
+     NSLog(@"~~~~myDevicetoken=%@",myDevicetoken);
      // [3]:向个推服务器注册deviceToken
     [GeTuiSdk registerDeviceToken:token]; 
 }
